@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Lato-light';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oswald-bold';
+    src: url('../fonts/Oswald-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    /* height: 300vh; TESTING */
+}
+
+/* STICKY NAV BAR */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+    transition-duration: 400ms;
+}
+
+header nav{
+    position: relative;
+    /* width: 100%; */
+    height: 57px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    color: white;
+}
+
+header nav span{
+    display: flex;
+}
+
+header nav img#logo{
+    width: 42px;
+    height: 42px;
+    margin-top: -3px;
+    margin-left: 62px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+header nav img#headerTextMain{
+    width: 93px;
+    height: 36px;
+}
+
+header>nav>span>h1{
+    line-height: 18px!important;
+    font-weight: 500;
+    opacity: 0;
+    transition-duration: 1000ms;
+}
+
+header>nav>span>h1 span.text-top{
+    padding-top: 4px;
+    font-size: 22px!important;
+    letter-spacing: 1px!important;
+}
+header>nav>span>h1 span.text-bottom{
+    font-size: 24px!important;
+    letter-spacing: 1px!important;
+}
+
+header nav ol{
+    display: flex;
+    list-style-type: decimal-leading-zero;
+}
+
+header nav ol li{
+    font-family: "Lato";
+    /* font-size: 10px; */
+    font-size: 0.655rem;
+    text-transform: uppercase;
+	/* font-weight: 900; */
+
+    padding-top: 9px;
+    letter-spacing: 0.05rem;
+    line-height: 0.938rem;
+    /* font-stretch: extra-condensed; */
+}
+
+header nav ol li:nth-child(1){
+    margin-right: 61px;
+}
+
+header nav ol li:nth-child(2){
+    margin-right: 46px;
+}
+
+div.underline{
+    height: 1px;
+    background-color: #fff;
+}
+
+div.underline.line-long{
+    width: 70px;
+    margin-left: -20px;
+}
+
+div.underline.line-short{
+    width: 54px;
+    margin-left: -19px;
+}
+
+/* SECTION : 1 - HERO */
+
+section.hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105.8vh;
+    overflow: hidden;
+}
+
+section.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 91vh; */
+    /* height: 106vh; */
+    object-fit: cover;
+    /* filter: contrast(1.4) saturate(1); */
+}
+
+section.hero img#textLA{
+    position: absolute;
+    top: 0;
+}
+
+/* section.hero img#imgSnow{
+    filter: grayscale(1) brightness(1) opacity(0.3);
+} */
+
+/* section.hero h1.text-main{
+    position: absolute;
+    top: 204px;
+    left: 343px;
+}
+
+h1.text-main{
+    text-transform: uppercase;
+    line-height: 100px;
+    color: #4d4d4d;
+	font-family: "Bebas";
+}
+
+h1.text-main .text-top{
+    display: block;
+    font-size: 124px;
+    letter-spacing: 5px;
+}
+
+h1.text-main .text-bottom{
+    display: block;
+    font-size: 134px;
+    color: #0e308f;
+    letter-spacing: 5px;
+} */
+
+/* div.overlay-white{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255,255,255,0.25);
+} */
