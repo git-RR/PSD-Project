@@ -21,6 +21,7 @@
     src: url('../fonts/Oswald-Bold.ttf');
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -29,208 +30,107 @@
 
 body{
     background: white;
-    /* height: 300vh; TESTING */
     scroll-behavior: smooth;
 }
 
-/* STICKY NAV BAR */
 
-    header{
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-        background-color: transparent;
-        transition-duration: 400ms;
-    }
-
-    header nav{
-        position: relative;
-        /* width: 100%; */
-        height: 57px;
-        margin-inline: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-    }
-
-    header nav span{
-        display: flex;
-    }
-
-    header nav img#logo{
-        width: 42px;
-        height: 42px;
-        margin-top: -3px;
-        margin-left: 62px;
-        margin-right: 5px;
-        border-radius: 50%;
-    }
-
-    header nav img#headerTextMain{
-        width: 93px;
-        height: 36px;
-    }
-
-    header>nav>span>h1{
-        line-height: 18px!important;
-        font-weight: 500;
-        opacity: 0;
-        transition-duration: 1000ms;
-    }
-
-    header>nav>span>h1 span.text-top{
-        padding-top: 4px;
-        font-size: 22px!important;
-        letter-spacing: 1px!important;
-    }
-    header>nav>span>h1 span.text-bottom{
-        font-size: 24px!important;
-        letter-spacing: 1px!important;
-    }
-
-    header nav ol{
-        display: flex;
-        list-style-type: decimal-leading-zero;
-    }
-
-    header nav ol li{
-        font-family: "Lato";
-        font-size: 0.655rem;
-        text-transform: uppercase;
-        padding-top: 9px;
-        letter-spacing: 0.05rem;
-        line-height: 0.938rem;
-        
-            /* font-weight: 900;
-            font-stretch: extra-condensed;
-            font-size: 10px; */
-    }
-
-    header nav ol li:nth-child(1){
-        margin-right: 61px;
-    }
-
-    header nav ol li:nth-child(2){
-        margin-right: 46px;
-    }
-
-    div.underline{
-        height: 1px;
-        background-color: #fff;
-    }
-
-    div.underline.line-long{
-        width: 70px;
-        margin-left: -20px;
-    }
-
-    div.underline.line-short{
-        width: 54px;
-        margin-left: -19px;
-    }
-
-    header nav ol li a{
-        display: block;
-        font-family: "Lato";
-        color: white;
-        font-size: 0.655rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding-top: 9px;
-        letter-spacing: 0.05rem;
-        line-height: 0.938rem;
-    }
-
-    header nav ol li a:hover{
-        color: white;
-    }
-
-/* SECTION : 1 - HERO ************************************************************************************/
-
-section.hero{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
+header{
+    position: fixed;
     width: 100%;
-    height: 105.8vh;
-    /* height: 35rem; */
-    overflow: hidden;
+    z-index: 10;
+    background-color: transparent;
+    transition-duration: 400ms;
 }
 
-section.hero img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* height: 91vh; */
-    /* height: 106vh; */
-    /* object-fit: cover; */
-    /* filter: contrast(1.4) saturate(1); */
+header nav{
+    height: 57px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-section.hero img#textLA{
-    position: absolute;
-    top: 0;
+header nav span{
+    display: flex;
 }
 
-/* section.hero img#imgSnow{
-    filter: grayscale(1) brightness(1) opacity(0.3);
-} */
-
-section.hero h1.text-main{
-    display: none;
-    position: relative;
-    top: 18%;
-    left: 10px;
+header nav img#logo{
+    width: 42px;
+    height: 42px;
+    margin-top: -3px;
+    margin-left: 62px;
+    margin-right: 5px;
 }
 
-h1.text-main{
-    /* display: none; */
+header nav img#headerTextMain{
+    width: 93px;
+    height: 36px;
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+header nav ol{
+    display: flex;
+    list-style-type: decimal-leading-zero;
+}
+
+header nav ol li{
+    font-family: "Lato";
+    font-size: 0.655rem;
     text-transform: uppercase;
-    line-height: 65px;
-    color: #4d4d4d;
-	font-family: "Bebas";
+    padding-top: 9px;
+    letter-spacing: 0.05rem;
+    line-height: 0.938rem;
 }
 
-h1.text-main .text-top{
-    font-size: 80px;
-    letter-spacing: 2px;
+header nav ol li:nth-child(1){
+    margin-right: 61px;
 }
 
-h1.text-main .text-bottom{
-    font-size: 80px;
-    color: #414f6b;
-    letter-spacing: 5px;
+header nav ol li:nth-child(2){
+    margin-right: 46px;
 }
 
-/* div.overlay-white{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgba(255,255,255,0.25);
-} */
+div.underline{
+    height: 1px;
+    background-color: #fff;
+}
+
+div.underline.line-long{
+    width: 70px;
+    margin-left: -20px;
+}
+
+div.underline.line-short{
+    width: 54px;
+    margin-left: -19px;
+}
+
+header nav ol li a{
+    display: block;
+    font-family: "Lato";
+    color: white;
+    font-size: 0.655rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 9px;
+    letter-spacing: 0.05rem;
+    line-height: 0.938rem;
+}
+
+header nav ol li a:hover{
+    color: white;
+}
 
 
-/* SECTION : 2 ************************************************************************************/
 
-section.section-2{
-    /* position: absolute;
-    top: 105.7vh; */
-            /* margin-top: 40px; */
-    /* left: 0; */
-    width: 100%;
-    height: 131vh;
+section.hero, section.section-2, section.section-3{
+    position: relative!important;
     overflow: hidden;
-}
-
-section.section-2 img{
-    width: 100%;
-    object-fit: cover;
 }
 
 h1.text-large{
-    position: absolute;
     font-size: 7.5rem;
     color: #414f6b;
     opacity: 0.5;
@@ -249,23 +149,66 @@ h1.text-heading{
 
 section p{
     word-spacing: 1px;
-    /* width: 814px;
-    height: 339px; */
     font-size: 0.8rem;
     line-height: 20px;
     color: #000000;
     font-family: "Lato-light";
 }
 
+
+
+section.hero{
+    width: 100%;
+}
+
+section.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+section.hero img#textLA{
+    position: relative;
+}
+
+section.hero h1.text-main{ 
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 6rem;
+}
+
+h1.text-main{
+    text-transform: uppercase;
+    line-height: 5rem;
+    color: #4d4d4d;
+    font-family: "Bebas";
+}
+
+h1.text-main .text-top{
+    letter-spacing: 2px;
+}
+
+h1.text-main .text-bottom{
+    color: #414f6b;
+    letter-spacing: 5px;
+}
+
+
+section.section-2{
+    width: 100%;
+}
+
+section.section-2 img{
+    width: 100%;
+}
+
 section.section-2 h1.text-large{
-    /* position: absolute; */
+    position: absolute;
     top: 90px;
     left: 270px;
-    /* font-size: 7.5rem;
-    color: #414f6b;
-    opacity: 0.5;
-    font-weight: 900;
-    font-family: "Oswald"; */
 }
 
 section.section-2 h1 span.zero{
@@ -291,39 +234,23 @@ section.section-2 h1.text-heading{
     position: absolute;
     top: 162px;
     left: 378px;
-    /* font-size: 1.8rem;
-    color: #414f6b;
-    font-weight: 900;
-    font-family: "Oswald-bold";
-    text-transform: uppercase;
-    letter-spacing: -1px; */
 }
 
 section.section-2 p.lorem-text{
     position: absolute;
     top: 218px;
     left: 332px;
-    /* word-spacing: 1px;
-    width: 814px;
-    height: 339px;
-    font-size: 0.8rem;
-    line-height: 20px;
-    color: #000000;
-    font-family: "Lato-light"; */
 }
+
 
 section.section-2 div#carousel{
     position: absolute;
     bottom: 0px;
     left: 0;
     width: 100%;
-    height: 200px;
 }
 
-/* SECTION: 2 - CAROUSEL */
-
 .carousel-inner{
-    /* background: #414f6b; */
     background: rgba(65,79,107,0.8);
 }
 
@@ -332,12 +259,11 @@ section.section-2 div#carousel{
     padding-top: 20px;
     padding-right: 2px;
     padding-left: 2px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .carousel-indicators{
-    position: absolute;
-    bottom: 0px;
+    margin-bottom: 5px;
 }
 
 .carousel-indicators button{
@@ -352,83 +278,149 @@ section.section-2 div#carousel{
 }
 
 
-@media (min-width: 768px) { /* FULL SCREEN */
-    .tabs-container .nav-tabs {
-        display: flex;
-    }
 
-    .tabs-container .card .card-header {
-        display: none;
-    }
 
-    .tabs-container .card .collapse {
-        display: block;
-    }
+section.section-3{
+    width: 100%;
 }
 
-@media (max-width: 767px) {  /* MOBILE*/
-    .tabs-container .tab-content > .tab-pane {
-        display: block !important;
-        opacity: 1;
-        border-radius: 0px;
-        /* margin-bottom: 10px; */
-    }
+section.section-3 .text-box{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
 
-    /* .tabs-container .card-header {
-        background: #427fad;
-        color: #fff;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-    } */
-    .tabs-container .card-header h5 a {
-    /* accordion link text */
-        font-size: 20px;
-        text-decoration: underline;
-        text-transform: uppercase;
-        color: #414f6b;
-        font-weight: 700;
-        font-family: "Oswald";
-        border-bottom: none;
-        /* background: #427fad;
-        color: #fff;
-        border-bottom: none;
-        text-decoration: none;
-        font-size: 16px; */
-        display: block;
-    }
-    .tabs-container .card-header h5 a i {
-        float: right;
-        /* padding-top: 5px; */
-    }
-    /* .tabs-container .card-body {
-        border: 1px solid #427fad;
-    } */
-    /* .tabs-container .card-header h5 a:hover {
-        color: #fff;
-    } */
+section.section-3 h1.text-large{
+    position: absolute;
+    top: 2px;
+    left: 300px;
+    font-size: 7.7rem;
+    font-family: 'Oswald-bold';
+    font-weight: bolder;
+}
+
+section.section-3 h1 span.zero{
+    position: absolute;
+    top: -3px;
+    left: 2px;
+}
+
+section.section-3 h1 span.one{
+    position: absolute;
+    top: -3px;
+    left: 65px;
+}
+
+section.section-3 h1 span.dot{
+    position: absolute;
+    top: -2px;
+    left: 125px;
+}
+
+section.section-3 h1.text-heading{
+    position: absolute;
+    top: 74px;
+    left: 432px;
+}
+
+section.section-3 p.lorem-text{
+    position: absolute;
+    top: 56px;
+    left: 526px;
 }
 
 
+.tabs-container{
+    position: relative;
+    width: 100%;
+    background-color: #414f6b;
+}
 
+.tabs-container .nav-tabs {
+    display: none;
+    margin-left: 269px;
+}
 
+.tabs-container .nav-tabs .nav-link{
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #b0b4be;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Oswald";
+    padding: 2px 17px 4px;
+    height: 34px;
+}
 
+.tabs-container .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    text-decoration: none;
+    position: relative;
+    color: #414f6b;
+    background: #b0b4be;
+}
 
-
-/* 
-@media screen () {
-    
-} */
-
-section.hero, section.section-2, section.section-3{
-    position: relative!important;
+.nav-tabs .nav-link.active::after{
+    content: '';
+    width: 71%;
+    height: 1px;
+    position: absolute;
+    left: 17px;
+    bottom: 5px;
+    background-color: #414f6b;
 }
 
 
+.tab-content .tab-pane .collapse img{
+    width: 100%;
+}
 
-@media (min-height: 767px) { /* FULL SCREEN LAPTOP*/
-    section.section-2{
-        margin-top: -118px;
-    }
-    section.section-2 div#carousel{
-        bottom: 145px;
-    }
+.card, .nav-tabs{
+    border-width: 0!important;
+}
+
+.tab-content .tab-pane .collapse .tab-box{
+    position: absolute;
+    top: 87px;
+    left: 25px;
+    width: 18.6rem;
+    height: 11.8rem;
+    background: rgba(255,255,255,0.7);
+    padding: 10px 32px;
+    margin-left: 269px;
+}
+
+section.section-3 h1.text-heading.tabs-text{
+    position: initial;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #414f6b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    height: 63px;
+    margin-top: -8px;
+    margin-left: 62px;
+}
+
+footer p{
+    margin-right: 50px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #63769d;
+    font-size: 9px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: "Lato-light";
 }
