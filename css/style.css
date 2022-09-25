@@ -1,3 +1,8 @@
+
+/******************************************************/
+/*                      FONTS                         */
+/******************************************************/
+
 @font-face {
     font-family: 'Bebas';
     src: url('../fonts/BebasNeue-Regular.ttf');
@@ -21,6 +26,9 @@
     src: url('../fonts/Oswald-Bold.ttf');
 }
 
+/******************************************************/
+/*                    DEFAULTS                        */
+/******************************************************/
 
 *{
     margin: 0;
@@ -33,6 +41,9 @@ body{
     scroll-behavior: smooth;
 }
 
+/******************************************************/
+/*                     HEADER                         */
+/******************************************************/
 
 header{
     position: fixed;
@@ -123,13 +134,18 @@ header nav ol li a:hover{
     color: white;
 }
 
-
+/******************************************************/
+/*                  ALL SECTIONS                      */
+/******************************************************/
 
 section.hero, section.section-2, section.section-3{
     position: relative!important;
     overflow: hidden;
 }
 
+/**********************/
+/*   sections 2 & 3   */
+/**********************/
 h1.text-large{
     font-size: 7.5rem;
     color: #414f6b;
@@ -155,7 +171,9 @@ section p{
     font-family: "Lato-light";
 }
 
-
+/******************************************************/
+/*                   SECTION 1                        */
+/******************************************************/
 
 section.hero{
     width: 100%;
@@ -172,6 +190,9 @@ section.hero img#textLA{
     position: relative;
 }
 
+/**********************/
+/*   only on mobile   */
+/**********************/
 section.hero h1.text-main{ 
     display: none;
     position: absolute;
@@ -196,6 +217,9 @@ h1.text-main .text-bottom{
     letter-spacing: 5px;
 }
 
+/******************************************************/
+/*                   SECTION 2                        */
+/******************************************************/
 
 section.section-2{
     width: 100%;
@@ -242,6 +266,9 @@ section.section-2 p.lorem-text{
     left: 332px;
 }
 
+/**********************/
+/*      carousel      */
+/**********************/
 
 section.section-2 div#carousel{
     position: absolute;
@@ -278,7 +305,9 @@ section.section-2 div#carousel{
 }
 
 
-
+/*****************************************************
+*                   SECTION 3                        *
+******************************************************/
 
 section.section-3{
     width: 100%;
@@ -329,6 +358,9 @@ section.section-3 p.lorem-text{
     left: 526px;
 }
 
+/**********************/
+/*  tabs & accordion  */
+/**********************/
 
 .tabs-container{
     position: relative;
@@ -395,6 +427,9 @@ section.section-3 h1.text-heading.tabs-text{
     position: initial;
 }
 
+/******************************************************/
+/*                     FOOTER                         */
+/******************************************************/
 
 footer{
     position: relative;
@@ -423,4 +458,353 @@ footer p{
     font-weight: 900;
     font-style: italic;
     font-family: "Lato-light";
+}
+
+/******************************************************/
+/*                        RWD                         */
+/******************************************************/
+
+
+@media (min-width: 768px) { 
+    .tabs-container .nav-tabs {
+        display: flex;
+    }
+    .tabs-container .card .card-header {
+        display: none;
+    }
+    .tabs-container .card .collapse {
+        display: block;
+    }
+}
+@media (max-width: 1200px){
+    section.section-2 h1.text-large{
+        top: 96px;
+        left: 72px;
+    }
+    section.section-2 h1.text-heading{
+        top: 158px;
+        left: 180px;        
+    }
+    section.section-2 p.lorem-text{
+        top: 200px;
+        left: 220px;
+    }
+    section.section-3 h1.text-large{
+        top: 0;
+        left: 74px;
+    }
+    section.section-3 h1.text-heading{
+        top: 70px;
+        left: 205px;
+    }
+    section.section-3 p.lorem-text{
+        top: 60px;
+        left: 400px;
+    }
+}
+@media (max-width: 993px){
+    section.section-2{
+        background:url("../images/2/2-Bg.png");
+    }
+    section.section-2 > img{
+        width: auto;
+        opacity: 0;
+    }
+    h1.text-heading{
+        font-size: 4rem;
+    }
+    p.lorem-text{
+        padding: 0 3rem;
+        font-size: 1.1rem;
+    }
+    section.section-2 h1.text-large{
+        top: 96px;
+        left: 72px;
+    }
+    section.section-2 h1.text-heading{
+        top: 128px;
+        left: 180px;        
+    }
+    section.section-2 p.lorem-text{
+        top: 290px;
+        left: 0;
+    }
+    .carousel-item > img{
+        width: 25%!important;
+    }
+    section.section-3 .text-box{
+        height: 250px;
+    }
+    section.section-3 h1.text-large{
+        top: 0;
+        left: 74px;
+    }
+    section.section-3 h1.text-heading{
+        top: 35px;
+        left: 200px;
+    }
+    section.section-3 p.lorem-text{
+        top: 150px;
+        left: 0px;
+    }
+    .tab-content .tab-pane .collapse img{
+        width: auto;
+    }
+    .tab-content .tab-pane .collapse .tab-box{
+        left: 0;
+        height: auto;
+        margin-left: 100px;
+    }
+    section.section-3 h1.text-heading.tabs-text{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 767px) {  
+    .tabs-container .tab-content > .tab-pane {
+        display: block !important;
+        opacity: 1;
+        border-radius: 0px;
+    }
+    .tabs-container .card-header h5 a {
+        font-size: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: #414f6b;
+        font-weight: 700;
+        font-family: "Oswald";
+        border-bottom: none;
+        display: block;
+    }
+    .tabs-container .card-header h5 a i {
+        float: right;
+    }
+
+    section.section-2{
+        background:url("../images/2/2-Bg.png");
+    }
+    section.section-2 > img{
+        width: auto;
+        opacity: 0;
+    }
+    h1.text-heading{
+        font-size: 4rem;
+    }
+    p.lorem-text{
+        padding: 0 3rem;
+        font-size: 1.1rem;
+    }
+    section.section-2 h1.text-large{
+        top: 96px;
+        left: 72px;
+    }
+    section.section-2 h1.text-heading{
+        top: 128px;
+        left: 180px;        
+    }
+    section.section-2 p.lorem-text{
+        top: 290px;
+        left: 0;
+    }
+    .carousel-item > img{
+        width: 38%!important;
+    }
+    section.section-3 .text-box{
+        height: 250px;
+    }
+    section.section-3 h1.text-large{
+        top: 0;
+        left: 74px;
+    }
+    section.section-3 h1.text-heading{
+        top: 35px;
+        left: 200px;
+    }
+    section.section-3 p.lorem-text{
+        top: 150px;
+        left: 0px;
+    }
+    .tab-content .tab-pane .collapse img{
+        width: auto;
+    }
+    .tab-content .tab-pane .collapse .tab-box{
+        left: 0;
+        height: auto;
+        margin-left: 100px;
+        transition: 1000ms;
+    }
+    section.section-3 h1.text-heading.tabs-text{
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 577px){
+    section.hero img{
+        width: auto;
+    }
+    .col-sm-8{
+        width: auto!important;
+    }
+    section.hero img#textLA{
+        opacity: 0;
+    }
+    section.hero h1.text-main{
+        display: block;
+    }
+    section.section-2{
+        background:url("../images/2/2-Bg.png");
+    }
+    section.section-2 > img{
+        width: auto;
+        opacity: 0;
+    }
+    h1.text-heading{
+        font-size: 4rem;
+    }
+    p.lorem-text{
+        padding: 0 3rem;
+        font-size: 1.1rem;
+    }
+    section.section-2 h1.text-large{
+        top: 10%;
+        left: 10%;
+    }
+    section.section-2 h1.text-heading{
+        top: 13%;
+        left: 29%;        
+    }
+    section.section-2 p.lorem-text{
+        top: 28%;
+        left: 0;
+    }
+    .carousel-item > img{
+        width: 52%!important;
+    }
+    section.section-3 .text-box{
+        height: 250px;
+    }
+    section.section-3 h1.text-large{
+        top: 0;
+        left: 10%;
+    }
+    section.section-3 h1.text-heading{
+        top: 7%;
+        left: 34%;
+    }
+    section.section-3 p.lorem-text{
+        top: 17%;
+        left: 0px;
+    }
+    .tab-content .tab-pane .collapse img{
+        width: auto;
+    }
+    .tab-content .tab-pane .collapse .tab-box{
+        left: 0;
+        height: auto;
+        margin-left: 40px;
+    }
+    section.section-3 h1.text-heading.tabs-text{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 300px){
+    header nav img#logo{
+        margin-left: 10px;
+    }
+    header nav img#headerTextMain{
+        display: none;
+    }
+    header nav ol li{
+        padding-top: 0px;
+    }
+    header nav ol li:nth-child(1){
+        margin-right: 30px;
+    }
+    header nav ol li:nth-child(2){
+        margin-right: 20px;
+    }
+    section.hero{
+        height: 100vh;
+    }
+    section.hero img{
+        width: auto;
+    }
+    .col-sm-8{
+        width: auto!important;
+    }
+    section.hero img#textLA{
+        opacity: 0;
+    }
+    h1.text-main{
+        line-height: 2.6rem;
+    }
+    section.hero h1.text-main{
+        display: block;
+        top: 120px;
+        left: 20px;
+        font-size: 3rem;
+    }
+    
+    section.section-2{
+        background:url("../images/2/2-Bg.png");
+    }
+    section.section-2 > img{
+        width: auto;
+        opacity: 0;
+    }
+    h1.text-heading{
+        font-size: 2rem;
+    }
+    p.lorem-text{
+        padding: 0 3rem;
+        font-size: 1rem;
+    }
+    section.section-2 h1.text-large{
+        top: 40px;
+        left: 40px;
+    }
+    section.section-2 h1.text-heading{
+        top: 180px;
+        left: 50px;        
+    }
+    section.section-2 p.lorem-text{
+        top: 250px;
+        left: 0;
+    }
+    section.section-2 div#carousel{
+        bottom: 60px;
+    }
+    .carousel-item > img{
+        width: 100%!important;
+        padding: 0;
+    }
+    section.section-3 .text-box{
+        height: 250px;
+    }
+    section.section-3 h1.text-large{
+        top: 0;
+        left: 26px;
+    }
+    section.section-3 h1.text-heading{
+        top: 70px;
+        left: 155px;
+    }
+    section.section-3 p.lorem-text{
+        top: 150px;
+        left: 0px;
+    }
+    section.section-3 .text-box{
+        height: 340px;
+    }
+    .tab-content .tab-pane .collapse img{
+        width: auto;
+        height: 100vh;
+    }
+    .tab-content .tab-pane .collapse .tab-box{
+        left: 0;
+        height: auto;
+        margin-left: 0px;
+    }
+    section.section-3 h1.text-heading.tabs-text{
+        font-size: 3rem;
+    }
 }
